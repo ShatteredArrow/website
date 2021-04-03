@@ -7,13 +7,10 @@ on:
       logLevel:
         description: 'Log level'     
         default: 'warning'
-      tags:
-        description: 'Test scenario tags'  
 
 jobs:
   github_data:
     runs-on: ubuntu-latest
-    if: github.repository == 'hackforla/website'
     
     steps:
     - name: Checkout repository
