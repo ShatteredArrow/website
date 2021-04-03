@@ -65,6 +65,7 @@ const octokit = new Octokit({ auth: token });
   }
 
   // Write updated data to github-data.json
+  console.info("Writing Data");
   writeData(newGitHubData);
 
 })();
@@ -194,6 +195,7 @@ function writeData(projectData){
   // Store the date this script finished running. dateRan is a global variable defined at the beginning of this script
   projectData.unshift(dateRan.toString());
   fs.writeFileSync('_data/external/github-data.json', JSON.stringify(projectData, null, 2));
+  console.log("Writing data successfull")
 }
 
 /**
