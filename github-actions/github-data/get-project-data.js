@@ -11,6 +11,10 @@ const untaggedRepoIds = [79977929];
 
 // Extend Octokit with new contributor endpoints and construct instance of class with API token 
 Object.assign(Octokit.prototype, trueContributorsMixin);
+let token = core.getInput("token");
+if(token){
+console.log("Token Recieved: ", token )
+}
 const octokit = new Octokit({ auth: core.getInput("token") });
 
 (async function main() {
