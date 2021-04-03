@@ -15,6 +15,9 @@ let token = core.getInput("token");
 if(token){
 console.log("Token Recieved: ", token )
 }
+else{
+console.log("token missing damnit")
+}
 const octokit = new Octokit({ auth: core.getInput("token") });
 
 (async function main() {
