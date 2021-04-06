@@ -6,7 +6,7 @@
       <img src="{{ project.image | absolute_url }}" class="project-tmb-img" alt={{project.alt}}/>
     </div>
     {%- else  -%}
-    <a href='{{ project.url | replace: ".html", "" }}'>
+    <a href='{{ project.url | absolute_url  }}'>
       <div class="project-tmb">
         <img src="{{ project.image | absolute_url }}" class="project-tmb-img" alt="{{project.alt}}"/>
       </div>
