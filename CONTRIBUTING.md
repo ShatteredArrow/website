@@ -9,11 +9,11 @@ The following is a set of guidelines for contributing to the website repository,
 
 # Table of Contents
 ### Setting up the development envirnoment
-1. [Join the repository team](#Join-the-repository-team-[1])
-2. [Fork the repository](#Fork-the-repository-[2])
-3. [Clone the forked repository](#Clone-the-forked-repository-[3])
+1. [Join the repository team](#Join-the-repository-team)
+2. [Fork the repository](#Fork-the-repository)
+3. [Clone the forked repository](#Clone-the-forked-repository)
 4. [Set up Docker](#Set-up-Docker-[4])
-5. [Build and serve the website locally](#Build-and-serve-the-website-locally-[5])
+5. [Build and serve the website locally](#Build-and-serve-the-website-locally)
 ### Working on your first issue and making your first pull request
 1. [Working on your first issue](#Working-on-your-first-issue)
    - [Check current branch](#Check-current-branch)
@@ -35,7 +35,7 @@ The following is a set of guidelines for contributing to the website repository,
 
 
 # Setting up the development envirnoment
-## Join the repository team [1]
+## Join the repository team
 
 In the `hfla-site` slack channel, send your GitHub name to the project manager (or on the slack channel thread) and we'll add you as a member to the GitHub repository Team.
 
@@ -46,7 +46,7 @@ Once you have accepted the GitHub invite (comes via email or in your GitHub noti
 2. Setup two factor authentication on your account following [this](https://docs.github.com/en/github/authenticating-to-github/configuring-two-factor-authentication)
 
 
-## Fork the repository [2]
+## Fork the repository
 
 You can fork the hackforla/website repository by clicking <a href="https://github.com/hackforla/website/fork"> <button> <img src="https://user-images.githubusercontent.com/17777237/54873012-40fa5b00-4dd6-11e9-98e0-cc436426c720.png" width="8px"> Fork</button></a>
 . A fork is a copy of the repository that will be placed on your GitHub account.
@@ -58,7 +58,7 @@ Note that this copy is on a remote server on the GitHub website and not on your 
 
 If you click the icon again, it will not create a new fork but instead give you the URL associated with your fork.
 
-## Clone the forked repository [3]
+## Clone the forked repository
 
 The assumption from here on out is you have git installed on your system. If that is not the case. You can find instructions for installing git on your operating system [**here**](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git).The following steps will create a third copy of the repository on your local desktop.
 
@@ -112,7 +112,7 @@ The assumption from here on out is you have git installed on your system. If tha
       git remote add upstream https://github.com/hackforla/website.git
       ```
       </details>
-## Set up Docker [4]
+## Set up Docker
 
 Docker is the recommended approach to quickly getting started with local development. Docker helps create a local/offline version of the hackforla.org website on your computer so you can test out your code before submitting a pull request
 
@@ -128,7 +128,7 @@ Installing WSL2 on windows
 - https://docs.microsoft.com/en-us/windows/wsl/install-win10
 </details>
 
-## Build and serve the website locally [5]
+## Build and serve the website locally
 ### Build Up
 
 - This command starts a jekyll server locally. The server watches for changes to
@@ -190,7 +190,6 @@ the source files and rebuilds and refreshes the site automatically in your brows
    ```bash
    docker-compose up
    ```
-<br>
 
 # Working on your first issue and making your first pull request
 
