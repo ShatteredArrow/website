@@ -15,10 +15,12 @@ The following is a set of guidelines for contributing to the website repository,
 4. [Set up Docker](#step-4-setting-up-docker)
 5. [Build and serve the website locally](Build-and-serve-the-website-locally-[5])
 ### Working on your first issue and making your first pull request
-1. [Switch to new issue branch before you start making changes](#step-6-change-to-a-new-branch)
-2. [Check upstream before you push](#step-7-check-upstream-before-you-push).
-3. [No changes in the upstream repo](#step-7a-no-changes-in-the-upstream-repository)
-4. [Conflicting changes in the upstream repo](#step-7b-conflicting-changes-in-the-upstream-repository) and how to resolve them
+1. [Check current branch](#step-6-change-to-a-new-branch)
+2. [Create a new branch where you will work on your issue](#step-7-check-upstream-before-you-push)
+3. [Prepare your changes to push to your repository](#step-7a-no-changes-in-the-upstream-repository)
+4. [Check upstream before you push](#step-7b-conflicting-changes-in-the-upstream-repository)
+   - [No conflicting changes in upstream repository]()
+   - [Conflicting changes in upstream respoitory]() 
 5. [Complete the pull request](#step-8-complete-the-pull-request)
 ### Resources and Documentation
 1. [Hack for LA's Site Architecture](https://github.com/hackforla/website/wiki/Hack-for-LA's-Site-Architecture)
@@ -38,17 +40,15 @@ In the `hfla-site` slack channel, send your GitHub name to the project manager (
 
 Once you have accepted the GitHub invite (comes via email or in your GitHub notifications), please do the following:
 
-1. Mark your own membership public https://help.github.com/en/articles/publicizing-or-hiding-organization-membership#changing-the-visibility-of-your-organization-membership
+1. Mark your own membership public following this [guide](https://help.github.com/en/articles/publicizing-or-hiding-organization-membership#changing-the-visibility-of-your-organization-membership)
 
-1. Setup two factor authentication on your account https://github.com/hackforla/governance/issues/20
+2. Setup two factor authentication on your account following [this](https://docs.github.com/en/github/authenticating-to-github/configuring-two-factor-authentication)
 
 
 ## Fork the repository [2]
 
-In https://github.com/hackforla/website, look for the fork icon in the top right. Click it and create a fork of the repository.
-
-<sub>For git beginners, a fork is a copy of the repository that will be placed on your GitHub account </sub>
-
+You can fork the hackforla/website repository by clicking <a href="https://github.com/hackforla/website/fork"> <button> <img src="https://user-images.githubusercontent.com/17777237/54873012-40fa5b00-4dd6-11e9-98e0-cc436426c720.png" width="8px"> Fork</button></a>
+. A fork is a copy of the repository that will be placed on your GitHub account.
 
 It should create a copy here -> `https://github.com/your_GitHub_user_name/website`,
 where `your_GitHub_user_name` is replaced with exactly that.
