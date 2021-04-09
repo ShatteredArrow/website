@@ -59,67 +59,68 @@ If you click the icon again, it will not create a new fork but instead give you 
 
 ## Clone the forked repository [3]
 
-For git beginners, this process will create a third copy of the repository on your local desktop.
+The assumption from here on out is you have git installed on your system. If that is not the case. You can find instructions for installing git on your operating system [**here**](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git).The following steps will create a third copy of the repository on your local desktop.
 
-First create a new folder on your desktop that will contain `hackforla` projects.
+   1. Create a new folder on your desktop that will contain `hackforla` projects.
 
-In your shell, navigate there then run the following commands:
+      In your shell, navigate there then run the following commands:
 
-```bash
-git clone https://github.com/your_GitHub_user_name/website.git
-```
+      ```bash
+      git clone https://github.com/your_GitHub_user_name/website.git
+      ```
 
-You should now have a new folder in your `hackforla` folder called `website`. Verify this by changing into the new directory:
-```bash
-cd website
-```
+      You should now have a new folder in your `hackforla` folder called `website`. Verify this by changing into the new directory:
+      ```bash
+      cd website
+      ```
 
-Next, verify that your local cloned repository is pointing to the correct `origin` URL (that is, the forked repo on your own Github account):
+  2. Verify that your local cloned repository is pointing to the correct `origin` URL (that is, the forked repo on your own Github account):
 
-```bash
-git remote -v
-```
-You should see `fetch` and `push` URLs with links to your forked repository under your account (i.e. `https://github.com/YOURUSERNAME/website.git`). You are all set to make working changes to the website on your local machine.
+     ```bash
+     git remote -v
+     ```
+     You should see `fetch` and `push` URLs with links to your forked repository under your account (i.e. `https://github.com/YOURUSERNAME/website.git`). You are all set to make working changes to the website on your local machine.
 
-However, we still need a way to keep our local repo up to date with the deployed website. To do so, you must add an upstream remote to incorporate changes made while you are working on your local repo. Run the following to add an upstream remote URL & update your local repo with recent changes to the `hackforla` version:
+     However, we still need a way to keep our local repo up to date with the deployed website. To do so, you must add an upstream remote to incorporate changes made while you are working on your local repo. Run the following to add an upstream remote URL & update your local repo with recent changes to the `hackforla` version:
 
-```bash
-git remote add upstream https://github.com/hackforla/website.git
-git fetch upstream
-```
-After adding the upstream remote, you should now see it if you again run `git remote -v` :
-```bash
-origin  https://github.com/YOURUSERNAME/website.git (fetch)
-origin  https://github.com/YOURUSERNAME/website.git (push)
-upstream        https://github.com/hackforla/website.git (fetch)
-upstream        https://github.com/hackforla/website.git (push)
-```
-<details>
-<summary><i>If you accidentally cloned using the repository URL from the HackForLA Github (instead of the fork on your Github)</i> 
-</summary>
+     ```bash
+     git remote add upstream https://github.com/hackforla/website.git
+     git fetch upstream
+     ```
 
-1) Set your forked repo on your Github as an `origin` remote:
+     After adding the upstream remote, you should now see it if you again run `git remote -v` :
+     ```bash
+      origin  https://github.com/YOURUSERNAME/website.git (fetch)
+      origin  https://github.com/YOURUSERNAME/website.git (push)
+      upstream        https://github.com/hackforla/website.git (fetch)
+      upstream        https://github.com/hackforla/website.git (push)
+      ```
+      <details>
+      <summary><i>If you accidentally cloned using the repository URL from the HackForLA Github (instead of the fork on your Github)</i> 
+      </summary>
 
-```bash
-git remote set-url origin https://github.com/your_user_name/website.git
-```
+      1) Set your forked repo on your Github as an `origin` remote:
 
-2) Add another remote called `upstream` that points to the `hackforla` version of the repository. This will allow you to incorporate changes later:
+      ```bash
+      git remote set-url origin https://github.com/your_user_name/website.git
+      ```
 
-```bash
-git remote add upstream https://github.com/hackforla/website.git
-```
-</details>
-<br>
+      2) Add another remote called `upstream` that points to the `hackforla` version of the repository. This will allow you to incorporate changes later:
+
+      ```bash
+      git remote add upstream https://github.com/hackforla/website.git
+      ```
+      </details>
+      <br>
 
 ## Setting up Docker [4]
 
 Docker is the recommended approach to quickly getting started with local development. Docker helps create a local/offline version of the hackforla.org website on your computer so you can test out your code before submitting a pull request
 
-The recommended installation method for your operating system can be found [here](https://docs.docker.com/install/).
+The recommended installation method for your operating system can be found [here](https://docs.docker.com/install/). <sub><i>Feel free to reach out in the hfla slack channel if you have trouble installing docker on your system</i></sub>
 
 <details>
-<summary><i>Docker Installation Troubleshooting </i></summary>
+<summary>Docker Installation Troubleshooting</summary>
 
 If you are on Windows and get 'You are not allowed to use Docker, you must be in the "docker-users" group' as an error message, the following wiki page is a guide for solving te issue:
 - [Windows docker-users group error guide](https://github.com/hackforla/website/wiki/Adding-local-user-accounts-to-the-docker-users-group-on-Windows-10)
