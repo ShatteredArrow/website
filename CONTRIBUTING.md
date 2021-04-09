@@ -33,7 +33,6 @@ The following is a set of guidelines for contributing to the website repository,
    - [Docker Compose](https://docs.docker.com/compose/gettingstarted/)
    - [Docker Desktop](https://docs.docker.com/install/)
 
-<br>
 
 # Setting up the development envirnoment
 ## Join the repository team [1]
