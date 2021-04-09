@@ -23,7 +23,7 @@ The following is a set of guidelines for contributing to the website repository,
    - [Check upstream before you push](#Check-upstream-before-you-push)
       - [No conflicting changes in upstream repository]()
       - [Conflicting changes in upstream respoitory]() 
-2. [Complete the pull request](#Complete-the-pull-request)
+2. [Making your first pull request](#Making-your-first-pull-request)
 ### Resources and Documentation
 1. [Hack for LA's Site Architecture](https://github.com/hackforla/website/wiki/Hack-for-LA's-Site-Architecture)
 2. [GitHub Pages](https://pages.github.com/)
@@ -295,22 +295,130 @@ Create a new branch for each issue you work on. Doing all your work on topic bra
     - <details>
       <summary>Conflicting changes in the upstream repository</summary>
 
-      PASTE_YOUR_IMAGE_HERE
+        When you check the upstream repository, you may see output like this:
 
+        ```bash
+        Fetching upstream
+        remote: Enumerating objects: 11, done.
+        remote: Counting objects: 100% (11/11), done.
+        remote: Compressing objects: 100% (7/7), done.
+        remote: Total 11 (delta 5), reused 7 (delta 4), pack-reused 0
+        Unpacking objects: 100% (11/11), 8.25 KiB | 402.00 KiB/s, done.
+        From https://github.com/hackforla/website
+        + 770d667...14f9f46 Bonnie     -> hackforla/Bonnie  (forced update)
+        * [new branch]      bonnie     -> hackforla/bonnie
+          5773ebe..0c86ecd  gh-pages   -> hackforla/gh-pages
+        ```
+
+        You can safely ignore changes in other issue branches, such as
+        `bonnie` above. But if you see changes in gh-pages, as in
+        `5773ebe..0c86ecd  gh-pages   -> hackforla/gh-pages`, you should
+        incorporate those changes into your repository before merging or
+        rebasing your issue branch. Use the [instructions below](#incorporating-changes-from-upstream)
+        to bring your fork up to date with the main repository.
+
+
+        ### Incorporating changes from upstream
+
+        Your fork of this repository on GitHub, and your local clone of that fork, will
+        get out of sync with this (upstream) repository from time to time.  (That's what has happend when you see something like "This branch is 1 commit behind hackforla:gh-pages" on the github website version of your hackforla repository.)
+
+        One way to keep your fork up to date with this repository is to follow
+        these instruction: [Syncing your fork to the original repository via the browser](https://github.com/KirstieJane/STEMMRoleModels/wiki/Syncing-your-fork-to-the-original-repository-via-the-browser)
+
+        You can also update your fork via the local clone of your fork, using
+        these instructions. Assuming you have a local clone with remotes
+        `upstream` (this repo) and `origin` (your GitHub fork of this repo):
+
+        First, you will need to create a local branch which tracks upstream/gh-pages.  You will only need to do this once; you do not need to do this every time you want to incorporate upstream changes. 
+
+        Run the following two commands: 
+
+        ```bash
+        git fetch upstream
+        git checkout -b upstream-gh-pages --track upstream/gh-pages
+        ```
+
+        If you have already created the branch upstream-gh-pages, the following commands will incorporate upstream changes: 
+
+        ```bash
+        git checkout upstream-gh-pages # Move to the branch you want to merge with. 
+        git pull  # This updates your tracking branch to match the gh-pages branch in this repository
+        git checkout gh-pages  # Move back to your gh-pages branch
+        git merge upstream-gh-pages  # Merge to bring your gh-pages current. 
+        ```
+        If you do all your work on topic branches (as suggested above) and keep gh-pages free of local modifications, this merge should apply cleanly.
+
+        Then push the merge changes to your GitHub fork:  
+
+        ```bash
+        git push
+        ```
+        If you go to your online github repository this should remove the message "This branch is x commit behind hackforla:gh-pages".
+
+        #### Incorporating changes into your topic branch
+
+        To incorporate these updates from the main GitHub repository into your
+        topic branch, you can 'rebase' your branch onto your updated gh-pages
+        branch. NOTE you should only rebase if you have never pushed your
+        topic branch to GitHub (or shared it with another collaborator).
+
+        ```bash
+        git checkout fix-logo-width-311
+        git rebase gh-pages
+        ```
+
+        If you receive warnings about conflicts, abort the rebase with `git
+        rebase --abort` and instead merge gh-pages into your branch.
+
+        ```bash
+        git checkout fix-logo-width-311
+        git merge gh-pages
+        ```
       </details>
 
-5. ### Complete the pull request
+## Making your first pull request
 
-   instructions on how to complete the PR TBD
+Start with pushing your changes to your remote repository
 
-   <sub>
-   <details>
-   <summary>Edits to pull request</summary>
+```bash
+git push --set-upstream origin fix-logo-width-311
+```
 
-   <i>If you find an error in your code or your reviewer asks you to make a change, please avoid editing your code directly from the pull request. Instead update it in your local branch first and then push it to your origin remote. This will update the original pull request.</i> 
+Now create a new pull request to ask for your updates to be
+incorporated into the live web site. Go to
+https://github.com/hackforla/website/pulls and click on "New pull
+request". Please rename your pull request something descriptive i.e. "building a project card for civic opportunity project".
+Also, since your changes are not in the hackforla/website
+repository, you need to click the "compare across forks" link in the
+first paragraph to make you repository and your new branch
+available. Make sure to include pictures of any visual changes made to the site and document your edits on the pull request so that the reviewer can understand the changes made. Review the changes that will be included in the pull
+request and, if it fixes a specific issue, include `Fixes #140` in the
+pull request message so the issue will be closed automatically once
+your pull request is accepted and merged.
 
-   </details>
-   </sub>
+Once you have finished working on the issue you have chosen, commit
+the changes to your local branch (e.g. `fix-logo-width-311`).
+
+<p style="text-align: center;"><i><b>NOTE</b>: After you completed your assignment and committed all of the changes, before moving onto your next issue and creating a new branch, you must leave your current branch and return to the `gh-pages` branch. From there you can checkout into a new branch. (This ensures you don’t accidentally include the changes from your previous branch in your new branch).</i></p>
+
+Run `git checkout gh-pages` to return to the `gh-pages` branch:
+
+From here, once your pull request is approved and merged you can pull the recent merge from the Hack For LA repository and delete your local branch:
+```bash
+git pull upstream gh-pages
+git branch -d <your-feature-branch>
+```
+Managing branches this way will keep the commit logs cleaner on the Hack For LA repository, versus merging your completed feature branches into your local repo.
+
+<sub>
+<details>
+<summary>Edits to pull request</summary>
+
+<i>If you find an error in your code or your reviewer asks you to make a change, please avoid editing your code directly from the pull request. Instead update it in your local branch first and then push it to your origin remote. This will update the original pull request.</i> 
+
+</details>
+</sub>
 
 <br><p style="text-align: center;">🎉🎉🎉<b>Congratulations!  You have successfully made your first pull request. Thank you for contributing !</b>🎉🎉🎉 </p><br>
 
