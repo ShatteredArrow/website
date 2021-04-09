@@ -400,7 +400,7 @@ your pull request is accepted and merged.
 Once you have finished working on the issue you have chosen, commit
 the changes to your local branch (e.g. `fix-logo-width-311`).
 
-<p style="text-align: center;"><i><b>NOTE</b>: After you completed your assignment and committed all of the changes, before moving onto your next issue and creating a new branch, you must leave your current branch and return to the `gh-pages` branch. From there you can checkout into a new branch. (This ensures you don’t accidentally include the changes from your previous branch in your new branch).</i></p>
+<p align="center"><i><b>NOTE</b>: After you completed your assignment and committed all of the changes, before moving onto your next issue and creating a new branch, you must leave your current branch and return to the `gh-pages` branch. From there you can checkout into a new branch. (This ensures you don’t accidentally include the changes from your previous branch in your new branch).</i></p>
 
 Run `git checkout gh-pages` to return to the `gh-pages` branch:
 
@@ -420,6 +420,6 @@ Managing branches this way will keep the commit logs cleaner on the Hack For LA 
 </details>
 </sub>
 
-<br><p style="text-align: center;">🎉🎉🎉<b>Congratulations!  You have successfully made your first pull request. Thank you for contributing !</b>🎉🎉🎉 </p><br>
+<br><p align="center">🎉🎉🎉<b>Congratulations!  You have successfully made your first pull request. Thank you for contributing !</b>🎉🎉🎉 </p><br>
 
 # [Back to Top](#overview)
