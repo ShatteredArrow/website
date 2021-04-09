@@ -6,22 +6,24 @@ The following is a set of guidelines for contributing to the website repository,
 
 ** <sub>The guide below assumes that you already have a github account. If you do not have a github account yet, [Sign Up Here](https://github.com/join)</sub>
 <br><br>
-## Table of Contents
 
+# Table of Contents
 ### Setting up the development envirnoment
 1. [Join the repository team](#Join-the-repository-team-[1])
 2. [Fork the repository](#Fork-the-repository-[2])
 3. [Clone the forked repository](#Clone-the-forked-repository-[3])
-4. [Set up Docker](#step-4-setting-up-docker)
-5. [Build and serve the website locally](Build-and-serve-the-website-locally-[5])
+4. [Set up Docker](#Set-up-Docker-[4])
+5. [Build and serve the website locally](#Build-and-serve-the-website-locally-[5])
 ### Working on your first issue and making your first pull request
-1. [Check current branch](#step-6-change-to-a-new-branch)
-2. [Create a new branch where you will work on your issue](#step-7-check-upstream-before-you-push)
-3. [Prepare your changes to push to your repository](#step-7a-no-changes-in-the-upstream-repository)
-4. [Check upstream before you push](#step-7b-conflicting-changes-in-the-upstream-repository)
-   - [No conflicting changes in upstream repository]()
-   - [Conflicting changes in upstream respoitory]() 
-5. [Complete the pull request](#step-8-complete-the-pull-request)
+1. [Working on your first issue](#Working-on-your-first-issue)
+   - [Check current branch](#Check-current-branch)
+   - [Create a new branch where you will work on your issue](#Create-a-new-branch-where-you-will-work-on-your-issue)
+   - [Prepare your changes to push to your repository](#Prepare-your-changes-to-push-to-your-repository)
+      </details>
+   - [Check upstream before you push](#Check-upstream-before-you-push)
+      - [No conflicting changes in upstream repository]()
+      - [Conflicting changes in upstream respoitory]() 
+2. [Complete the pull request](#Complete-the-pull-request)
 ### Resources and Documentation
 1. [Hack for LA's Site Architecture](https://github.com/hackforla/website/wiki/Hack-for-LA's-Site-Architecture)
 2. [GitHub Pages](https://pages.github.com/)
@@ -111,9 +113,7 @@ The assumption from here on out is you have git installed on your system. If tha
       git remote add upstream https://github.com/hackforla/website.git
       ```
       </details>
-      <br>
-
-## Setting up Docker [4]
+## Set up Docker [4]
 
 Docker is the recommended approach to quickly getting started with local development. Docker helps create a local/offline version of the hackforla.org website on your computer so you can test out your code before submitting a pull request
 
@@ -128,10 +128,8 @@ If you are on Windows and get 'You are not allowed to use Docker, you must be in
 Installing WSL2 on windows
 - https://docs.microsoft.com/en-us/windows/wsl/install-win10
 </details>
-<br>
 
 ## Build and serve the website locally [5]
-
 ### Build Up
 
 - This command starts a jekyll server locally. The server watches for changes to
@@ -197,11 +195,11 @@ the source files and rebuilds and refreshes the site automatically in your brows
 
 # Working on your first issue and making your first pull request
 
-## Work on an issue using git
+## Working on your first issue
 
 Create a new branch for each issue you work on. Doing all your work on topic branches leaves your repository's main branch (named `gh-pages`) unmodified and greatly simplifies keeping your fork in sync with the main project.
 
-1. Check current branch
+1. ### Check current branch
 
    The `git branch` command will let you know what branch you are in, and what branch names are already in use.
 
@@ -219,7 +217,7 @@ Create a new branch for each issue you work on. Doing all your work on topic bra
    git checkout gh-pages
    ```
 
-2. Create a new branch where you will work on your issue
+2. ### Create a new branch where you will work on your issue
 
    The `git checkout` command will create and change to a new branch where you will do the work on your issue.  In git, the checkout command lets you navigate between different branches.  Using the `-b` flag you can create a new branch and immediately switch into it. 
 
@@ -237,7 +235,7 @@ Create a new branch for each issue you work on. Doing all your work on topic bra
 
    When you've finished working on your issue, follow the steps below to prepare your changes to push to your repository. 
 
-3. Prepare your changes to push to your repository
+3. ### Prepare your changes to push to your repository
 
    Once you are done with the work on your issue you will push it to your repository.  Before you can push your work to your repository, you will stage and commit your changes.  These two commands are similar to the save command that you have used to in other programs. 
 
@@ -273,7 +271,7 @@ Create a new branch for each issue you work on. Doing all your work on topic bra
       git commit -m “insert message here”
       ```
 
-4. Check upstream before you push
+4. ### Check upstream before you push
 
    Before you push your local commits to your repository, check to see if there have been updates made in the main Hack For LA website repository. `git fetch` will check remote repositories for changes without altering your local repository.
 
@@ -301,7 +299,7 @@ Create a new branch for each issue you work on. Doing all your work on topic bra
 
       </details>
 
-5. Complete the pull request
+5. ### Complete the pull request
 
    instructions on how to complete the PR TBD
 
