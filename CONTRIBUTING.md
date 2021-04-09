@@ -422,4 +422,3 @@ Managing branches this way will keep the commit logs cleaner on the Hack For LA 
 
 <br><p align="center">🎉🎉🎉<b>Congratulations!  You have successfully made your first pull request. Thank you for contributing !</b>🎉🎉🎉 </p><br>
 
-# [Back to Top](#overview)
