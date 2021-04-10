@@ -1,7 +1,7 @@
 ---
-# https://www.hackforla.org/donate redirections to -> https://www.codeforamerica.org/donate
-layout: redirect
 title: Donate
-permalink: /donate/
+permalink: "/donate/"
+layout: redirect
 redirect_to: https://www.codeforamerica.org/donate
 ---
+

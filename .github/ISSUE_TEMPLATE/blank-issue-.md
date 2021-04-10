@@ -1,10 +1,9 @@
 ---
+title: ''
 name: 'Blank Issue '
 about: 'Standard HackforLA issue template '
-title: ''
 labels: ''
 assignees: ''
-
 ---
 
 ### Overview
