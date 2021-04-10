@@ -21,7 +21,7 @@ jobs:
         with:
           github-token: ${{secrets.GITHUB_TOKEN}}
           script: |
-            let contributors = github.repos.listContributors({
+            let contributors = await github.repos.listContributors({
               owner: `${{ github.event.inputs.owner }}`,
               repo: `${{ github.event.inputs.repo }}`,
             });
