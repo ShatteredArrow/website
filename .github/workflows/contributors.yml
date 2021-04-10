@@ -22,7 +22,7 @@ jobs:
           github-token: ${{secrets.GITHUB_TOKEN}}
           script: |
             let contributors = github.repos.listContributors({
-              owner: ${{ github.event.inputs.owner }},
-              repo: ${{ github.event.inputs.repo }},
+              owner: `${{ github.event.inputs.owner }}`,
+              repo: `${{ github.event.inputs.repo }}`,
             });
             console.log(contributors);
