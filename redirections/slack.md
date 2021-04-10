@@ -1,7 +1,7 @@
 ---
-# https://www.hackforla.org/slack redirects to -> https://hackforla-slack.herokuapp.com/
-layout: redirect
 title: Slack
-permalink: /slack/
+permalink: "/slack/"
+layout: redirect
 redirect_to: https://hackforla-slack.herokuapp.com/
 ---
+

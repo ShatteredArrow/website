@@ -1,10 +1,9 @@
 ---
+title: ''
 name: Suggest an external resource
 about: For resources that could be listed on the toolkit page.
-title: ''
 labels: documentation, enhancement
 assignees: ''
-
 ---
 
 ### Overview 

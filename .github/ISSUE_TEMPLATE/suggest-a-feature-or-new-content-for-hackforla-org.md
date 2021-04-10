@@ -1,10 +1,9 @@
 ---
+title: ''
 name: Suggest a feature or new content for HackforLA.org
 about: Describe this issue template's purpose here.
-title: ''
 labels: enhancement
 assignees: ''
-
 ---
 
 ### Overview 

@@ -1,7 +1,7 @@
 ---
-# https://www.hackforla.org/github redirects to -> https://www.github.com/hackforla
-layout: redirect
 title: Github
-permalink: /github/
+permalink: "/github/"
+layout: redirect
 redirect_to: https://www.github.com/hackforla
 ---
+
