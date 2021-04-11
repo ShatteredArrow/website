@@ -27,4 +27,4 @@ jobs:
               per_page: 100
             });
             contributors = contributors.data
-            console.log( contributors.map(contributor => contributor.login).join() );
+            console.log(`\`\`\`\n@${contributors.map(contributor => contributor.login).join(', @')}\n\`\`\` `);
