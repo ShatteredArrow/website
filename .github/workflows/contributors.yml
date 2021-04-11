@@ -25,5 +25,4 @@ jobs:
               owner: `${{ github.event.inputs.owner }}`,
               repo: `${{ github.event.inputs.repo }}`,
             });
-            console.log(typeof(contributors))
-            console.log(contributors);
+            console.log(contributors.data);
