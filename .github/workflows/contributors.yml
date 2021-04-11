@@ -8,20 +8,20 @@ on:
   workflow_dispatch:
     # Inputs the workflow accepts.
     inputs:
-      read_respository:
-        owner:
+      read_respository_owner:
+        description: The owner/organization name the repository belongs to
+        required: true
+      read_respository_repo:
+        description: The name of the repository to query contributors from
+        required: true
+      write_repository_owner:
           description: The owner/organization name the repository belongs to
+          required: false
+          default: hackforla
+      write_repository_repo:
+          description: The name of the repository to create the issue in
           required: true
-        repo:
-          description: The name of the repository to query contributors from
-          required: true
-      write_repository:
-        owner:
-          description: The owner/organization name the repository belongs to
-          required: false  
-        repo:
-          description: The name of the repository to query contributors from
-          required: true
+          default: governance
 
 jobs:
   comment:
@@ -32,9 +32,21 @@ jobs:
           github-token: ${{secrets.GITHUB_TOKEN}}
           script: |
             let contributors = await github.repos.listContributors({
-              owner: `${{ github.event.inputs.owner }}`,
-              repo: `${{ github.event.inputs.repo }}`,
+              owner: `${{ github.event.inputs.read_respository_owner }}`,
+              repo: `${{ github.event.inputs.read_respository_repo }}`,
               per_page: 100
             });
             contributors = contributors.data
             console.log(`\`\`\`\n@${contributors.map(contributor => contributor.login).join(', @')}\n\`\`\` `);
+            
+            let issueCreated = await github.issues.create({
+              owner: `${{ github.event.inputs.write_repository_owner }}`,
+              repo: `${{ github.event.inputs.write_repository_repo }}`,
+              title: `${{ github.event.inputs.write_repository_repo }} repository wants to change its license type`,
+              body: `\`\`\`\n@${contributors.map(contributor => contributor.login).join(', @')}\n\`\`\` `
+            });
+            
+            console.log(issueCreated);
+            
+            
+            
