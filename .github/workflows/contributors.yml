@@ -8,10 +8,20 @@ on:
   workflow_dispatch:
     # Inputs the workflow accepts.
     inputs:
-      owner:
-        required: true
-      repo:
-        required: true
+      read_respository:
+        owner:
+          description: The owner/organization name the repository belongs to
+          required: true
+        repo:
+          description: The name of the repository to query contributors from
+          required: true
+      write_repository:
+        owner:
+          description: The owner/organization name the repository belongs to
+          required: false  
+        repo:
+          description: The name of the repository to query contributors from
+          required: true
 
 jobs:
   comment:
