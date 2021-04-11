@@ -42,9 +42,7 @@ jobs:
             let issueCreated = github.issues.create({
               owner: `${{ github.event.inputs.write_repository_owner }}`,
               repo: `${{ github.event.inputs.write_repository_repo }}`,
-              title: `${{ github.event.inputs.write_repository_repo }} repository wants to change its license type`,
-              body: `\`\`\`\n@${contributors.map(contributor => contributor.login).join(', @')}\n\`\`\` `
-            });
+              title: `${{ github.event.inputs.write_repository_repo }} repository wants to change its license type` });
             
             console.log(issueCreated);
             
