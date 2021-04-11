@@ -25,4 +25,4 @@ jobs:
               owner: `${{ github.event.inputs.owner }}`,
               repo: `${{ github.event.inputs.repo }}`,
             });
-            console.log(contributors.data.map(person=>{person.id}));
+            console.log(contributors.data);
