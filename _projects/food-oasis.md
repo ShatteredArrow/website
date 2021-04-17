@@ -1,5 +1,6 @@
 ---
 title: Food Oasis
+<<<<<<< HEAD
 identification: '215666884'
 description: The website is focused on individuals seeking food in Los Angeles who
   need an up-to-date resource about food pantries and meals. Our mission is to update
@@ -10,6 +11,13 @@ image: "./assets/images/projects/food-oasis.jpg"
 alt: Vegatables beats stacked
 image-hero: "./assets/images/projects/food-oasis-hero.jpg"
 alt-hero: Food Oasis hero
+=======
+description: The website is focused on individuals seeking food in Los Angeles who need an up-to-date resource about food pantries and meals. Our mission is to update the existing website, foodoasis.la with a simplified UI and verified data.  Future development goals include creating functionality for referral services that will allow the end user to annotate and update listings through a peer verification system.
+image: /assets/images/projects/food-oasis.jpg
+alt: 'Stacks of freshly harvested beets'
+image-hero: /assets/images/projects/food-oasis-hero.jpg
+alt-hero: 'Stacks of freshly harvested carrots, beets and vegetables'
+>>>>>>> upstream-gh-pages
 leadership:
 - name: Jenny Mikesell
   role: Product Manager

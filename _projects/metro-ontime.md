@@ -1,5 +1,6 @@
 ---
 title: Railstats LA
+<<<<<<< HEAD
 identification: '155295655'
 description: Railstats LA tracks LA Metro trains and generates punctuality reports.
   Our website enables both Metro officials and the public to easily review up-to-date
@@ -8,6 +9,13 @@ image: "./assets/images/projects/metro-ontime.png"
 alt: metro ontime
 image-hero: "./assets/images/projects/metro-ontime-hero.png"
 alt-hero: Line graph of arrival times vs schedule for the Green Line train.
+=======
+description: Railstats LA tracks LA Metro trains and generates punctuality reports. Our website enables both Metro officials and the public to easily review up-to-date statistics for LA's 6 train lines.
+image: /assets/images/projects/metro-ontime.png
+alt: 'LA Metro Rail logo'
+image-hero: /assets/images/projects/metro-ontime-hero.png
+alt-hero: 'Line graph of arrival times versus schedule for the Green Line train.'
+>>>>>>> upstream-gh-pages
 leadership:
 - name: Cameron Sexton
   role: Product Owner/Lead Developer
