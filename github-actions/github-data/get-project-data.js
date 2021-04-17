@@ -27,7 +27,11 @@ const octokit = new Octokit({ auth: process.env.token });
   for(let repo of allRepos) {
     try{
     let repoLanguages = await octokit.repos.listLanguages({ owner: repo.owner.login, repo: repo.name });
+    try{
     let commitContributors = await getCommitContributors(repo);
+    }catch(err){
+    core.error(`Error ${err}, action may still succeed though`);
+    }
     if(commitContributors){
       let issueCommentContributors = await getCommentContributors(repo, (oldGitHubData.hasOwnProperty(repo.id)) ? dateLastRan.toISOString() : undefined);
       console.log(`Comment contributors from ${repo.name}:`);
