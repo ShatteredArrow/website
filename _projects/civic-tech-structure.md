@@ -74,8 +74,13 @@ looking:
 - category: UI/UX
   skill: UX Team Manager / Lead
 technologies:
+<<<<<<< HEAD
 - Google Docs (Doc, Sheet, Slide, Forms)
 - HackforLA.org guides
+=======
+  - Google Docs
+  - HackforLA.org guides
+>>>>>>> 833-Create-Progam_Areas-Page
 location:
 - Remote
 partner: Code for America & its Brigades

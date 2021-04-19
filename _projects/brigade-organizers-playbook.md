@@ -93,6 +93,7 @@ leadership:
     github: https://github.com/reemux
   picture: https://avatars.githubusercontent.com/reemux
 links:
+<<<<<<< HEAD
 - name: GitHub
   url: https://github.com/codeforamerica/brigade-playbook
 - name: Slack
@@ -104,6 +105,18 @@ links:
 looking: 
 tools: Zoom, Calendly, Otter.ai, Google Docs (Doc, Sheet, Slide, Forms), HackforLA.org
   guides
+=======
+  - name: GitHub
+    url: 'https://github.com/codeforamerica/brigade-playbook'
+  - name: Slack
+    url: 'https://cfa.slack.com/archives/G0196272BBN'
+  - name: Wiki
+    url: 'https://github.com/codeforamerica/brigade-playbook/wiki'
+  - name: Effective Practices
+    url: 'https://docs.google.com/spreadsheets/d/1N0VSDhYyy5WhX_z18Q0RvLlGO29JGGdMxVsD4X3nFYs/edit#gid=1425278717'
+looking:
+tools: Zoom, Calendly, Otter.ai, Google Docs, HackforLA.org guides
+>>>>>>> 833-Create-Progam_Areas-Page
 technologies:
 - Markdown
 location:
