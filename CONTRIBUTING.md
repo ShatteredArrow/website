@@ -1,6 +1,5 @@
 # How to Contribute
 
-<<<<<<< HEAD
 👍🎉 First off, thanks for taking the time to contribute! 🎉👍
 
 The following is a set of guidelines for contributing to the website repository, which is hosted on GitHub. These are mostly guidelines, not rules. Use your best judgment, and feel free to propose changes to this document in a pull request.
@@ -37,48 +36,6 @@ The following is a set of guidelines for contributing to the website repository,
 
 # Setting up the development envirnoment
 ## Join the repository team
-=======
-To develop the site, you'll need to first clone the repository on to your computer. For new Git users, see the [Using Git](#using-git) section below. <br><br>
-
-# OVERVIEW
-**Set up**
-1. [Join the Repo Team](#step-1-become-a-member-of-the-repository-team)
-
-2. [Using Git](#using-git) and [Fork the Repo](#step-2-fork-the-repository)
-
-3. [Clone to your local machine](#step-3-clone-your-online-repository-to-your-local-computer)
-
-4. [Set up Docker](#step-4-setting-up-docker)
-
-**Before you start working on an issue**
-
-5. [Read Hack for LA's Site Architecture to get acquainted with how the website is structured](https://github.com/hackforla/website/wiki/Hack-for-LA's-Site-Architecture)
-
-6. [Switch to new issue branch before you start making changes](#step-6-work-on-an-issue-using-git)
-
-
-**After you've worked on your issue and before you make a pull request:**
-
-7. [Check upstream before you push](#step-7-check-upstream-before-you-push).
-
-7a. [No changes in the upstream repo](#step-7a-no-changes-in-the-upstream-repository)
-
-**Or**
-
-7b. [Conflicting changes in the upstream repo](#step-7b-conflicting-changes-in-the-upstream-repository) and how to resolve them
-              
-**Okay. You're good to go!**   
-
-8. [Status updates](#step-8-status-updates)
- 
-9. [Complete the pull request](#step-9-complete-the-pull-request)
-
----
-
-### Forking and cloning the repository with proper security
-
-#### Step 1: Become a member of the repository Team
->>>>>>> wiki-mkdocs
 
 In the `hfla-site` slack channel, send your GitHub name to the project manager (or on the slack channel thread) and we'll add you as a member to the GitHub repository Team.
 
@@ -222,11 +179,7 @@ the source files and rebuilds and refreshes the site automatically in your brows
    docker-compose down
    ```
 
-<<<<<<< HEAD
    To stop the server, but not destroy it (often sufficient for day-to-day work):
-=======
-#### Step 6: Work on an issue using git  
->>>>>>> wiki-mkdocs
 
    ```bash
    docker-compose stop
@@ -457,14 +410,8 @@ git branch -d <your-feature-branch>
 Managing branches this way will keep the commit logs cleaner on the Hack For LA repository, versus merging your completed feature branches into your local repo.
 
 
-<<<<<<< HEAD
 <details>
 <summary>Edits to pull request</summary>
-=======
-- [ghpages](https://pages.github.com/)
-- [jekyll](https://jekyllrb.com)
-- [jekyllcli](https://jekyllrb.com/docs/usage/)
->>>>>>> upstream-gh-pages
 
 <i>If you find an error in your code or your reviewer asks you to make a change, please avoid editing your code directly from the pull request. Instead update it in your local branch first and then push it to your origin remote. This will update the original pull request.</i> 
 
