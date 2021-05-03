@@ -5,9 +5,15 @@ content: icon
 used-in: Credits
 artist: stories
 provider: Freepik
+<<<<<<< HEAD
 provider-link: https://www.freepik.com/
 image-url: "./assets/images/credits/credits-hero.png"
 alt: Image of Design
+=======
+provider-link: 'https://www.freepik.com/'
+image-url: /assets/images/credits/credits-hero.svg
+alt: 'Image of Design'
+>>>>>>> wiki-mkdocs
 type: icon
 ---
 
