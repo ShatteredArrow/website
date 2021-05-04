@@ -1,5 +1,0 @@
-## Agenda:
-
-## Notes:
-
-## Next Steps:
