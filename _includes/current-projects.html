@@ -71,7 +71,7 @@
                             "location": {{ project.location | jsonify }}
                             {%- endif -%}
                             {%- if project.image -%},
-                            "image": '{{ project.image }}'
+                            "image": '{{ project.image | relative_url }}'
                             {%- endif -%}
                             {%- if project.alt -%},
                             "alt": `{{ project.alt }}`
@@ -406,7 +406,7 @@
 
           <a href='${project.id}'>
               <div class="project-tmb">
-              <img src='${window.location.origin}${project.image}' class="project-tmb-img" alt='${project.alt}'/>
+              <img src='${project.image}' class="project-tmb-img" alt='${project.alt}'/>
               </div>
           </a>
 
