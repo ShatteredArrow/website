@@ -1,6 +1,6 @@
 # This is a basic workflow that is manually triggered
 
-name: Manual workflow
+name: Build and deploy Jekyll site to GitHub Pages
 
 # Controls when the action will run. Workflow runs when manually triggered using the UI
 # or API.
@@ -17,19 +17,10 @@ on:
         required: true
 
 jobs:
-  jekyll:
-    runs-on: ubuntu-16.04
+  github-pages:
+    runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v2
-
-
-    # Standard usage
-    - uses:  helaili/jekyll-action@v2
-      with:
-        token: ${{ secrets.GITHUB_TOKEN }}
-
-    # Specify the target branch (optional)
-    - uses: helaili/jekyll-action@v2
-      with:
-        token: ${{ secrets.GITHUB_TOKEN }}
-        target_branch: 'red-foo'
+      - uses: actions/checkout@v2
+      - uses: helaili/jekyll-action@v2
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
