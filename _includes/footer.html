@@ -8,7 +8,7 @@
           <li>
             <a href="{{ item.link }}" rel="noopener" target="_blank" class="js-inline-link js-inline-link-{{ item.name | downcase }}">
               {% if item.icon %}
-              {%- include {{ site.baseurl }}{{ item.icon }} -%}
+              {%- include {{ item.icon }} -%}
               {% endif %}
               <span class="sr-only">{{ item.name }}</span>
             </a>

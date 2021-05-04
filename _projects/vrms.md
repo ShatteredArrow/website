@@ -1,20 +1,10 @@
 ---
 title: VRMS
-<<<<<<< HEAD
-identification: '226157870'
-description: VRMS is a tool used for the engagement, support, and retention of a network
-  of volunteers.
-image: "./assets/images/projects/vrms.png"
-alt: VRMS homepage showing the check-in buttons.
-image-hero: "./assets/images/projects/vrms-hero.png"
-alt-hero: City of LA skyline.
-=======
 description: VRMS is a tool used for the engagement, support, and retention of a network of volunteers.
 image: /assets/images/projects/vrms.png
 alt: 'VRMS logo. VRMS homepage.'
 image-hero: /assets/images/projects/vrms-hero.png
 alt-hero: 'City of LA skyline at dusk.'
->>>>>>> upstream-gh-pages
 leadership:
 - name: Alex Anakin
   role: Software Architect / Tech Lead

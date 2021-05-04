@@ -1,27 +1,10 @@
 ---
 title: Youth Justice Nav
-<<<<<<< HEAD
-<<<<<<< HEAD
-identification: '324048462'
-description: We are creating a know your rights tool for youth and their families
-  when interacting with the Juvenile Justice System.  This interactive tool creates
-  a resource for youth and their families to access information that is relevant to
-  several different parts of the process from knowing your rights when you come into
-  contact with law enforcement, to an explanation of the different types of hearings
-  that take place, to knowing who various people in the courtroom are.
-image: "./assets/images/projects/youthjusticenav.png"
-alt: All capital letters spelling out title of project - YOUTH JUSTICE NAV
-image-hero: "./assets/images/projects/youthjusticenav-hero.png"
-=======
-description: We are creating a know your rights tool for youth and their families when interacting with the Juvenile Justice System.  This interactive tool creates a resource for youth and their families to access information that is relevant to several different parts of the process from knowing your rights when you come into contact with law enforcement, to an explanation of the different types of hearings that take place, to knowing who various people in the courtroom are. 
-=======
 description: We are creating a know your rights tool for youth and their families when interacting with the Juvenile Justice System.  This interactive tool creates a resource for youth and their families to access information that is relevant to several different parts of the process from knowing your rights when you come into contact with law enforcement, to an explanation of the different types of hearings that take place, to knowing who various people in the courtroom are.
->>>>>>> wiki-mkdocs
 image: /assets/images/projects/youthjusticenav.png
 alt: "All capital letters spelling out title of project - YOUTH JUSTICE NAV"
 image-hero: /assets/images/projects/youthjusticenav-hero.png
 alt: ''
->>>>>>> upstream-gh-pages
 leadership:
 - name: Bonnie Wolfe
   role: Agile Coach
@@ -48,14 +31,6 @@ leadership:
     github: https://github.com/j100892
   picture: https://avatars.githubusercontent.com/j100892
 links:
-<<<<<<< HEAD
-- name: GitHub
-  url: https://github.com/hackforla/YouthJusticeNav/
-- name: Slack
-  url: https://hackforla.slack.com/archives/C01J94D6GAC
-- name: Readme
-  url: https://github.com/hackforla/YouthJusticeNav/blob/main/README.md
-=======
   - name: GitHub
     url: 'https://github.com/hackforla/YouthJusticeNav/'
   - name: Slack
@@ -64,7 +39,6 @@ links:
     url: 'https://github.com/hackforla/YouthJusticeNav/blob/main/README.md'
   - name: Overview
     url: 'https://github.com/hackforla/product-management/blob/master/project-one-sheets/Youth-Justice-Nav-Product-One-Sheet.pdf'
->>>>>>> wiki-mkdocs
 looking:
 - category: Content
   skill: Content Writer

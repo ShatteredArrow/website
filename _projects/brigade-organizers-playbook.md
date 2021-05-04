@@ -1,24 +1,10 @@
 ---
 title: Brigade Organizers Playbook
-<<<<<<< HEAD
-identification: '336742445'
-description: Each of the 80+ Code for America Brigades is an experiment which generates
-  valuable learnings and new effective processes and practices. However, Brigades
-  and other civic tech volunteer organizations need not start from scratch. This project
-  aims to improve existing structures and create new ones that make it easier to share
-  replicable processes and practices so that organizers and members can iterate on
-  each others work, improving outcomes for the whole network.
-image: "./assets/images/projects/brigade-organizers-playbook.png"
-alt: Brigade Organizer's Playbook Extension Project
-image-hero: "./assets/images/projects/brigade-organizers-playbook-hero.png"
-alt-hero: A dark blue background.
-=======
 description: Each of the 80+ Code for America Brigades is an experiment which generates valuable learnings and new effective processes and practices. However, Brigades and other civic tech volunteer organizations need not start from scratch. This project aims to improve existing structures and create new ones that make it easier to share replicable processes and practices so that organizers and members can iterate on each others work, improving outcomes for the whole network.
 image: /assets/images/projects/brigade-organizers-playbook.png
 alt: "Brigade Organizer's Playbook Extension Project"
 image-hero: /assets/images/projects/brigade-organizers-playbook-hero.png
 alt-hero: ''
->>>>>>> upstream-gh-pages
 leadership:
 - name: Bonnie Wolfe
   role: Agile Mentor & CfA National Advisory Council BOP project Co-Lead
@@ -93,19 +79,6 @@ leadership:
     github: https://github.com/reemux
   picture: https://avatars.githubusercontent.com/reemux
 links:
-<<<<<<< HEAD
-- name: GitHub
-  url: https://github.com/codeforamerica/brigade-playbook
-- name: Slack
-  url: https://cfa.slack.com/archives/G0196272BBN
-- name: Wiki
-  url: https://github.com/codeforamerica/brigade-playbook/wiki
-- name: Effective Practices
-  url: https://docs.google.com/spreadsheets/d/1N0VSDhYyy5WhX_z18Q0RvLlGO29JGGdMxVsD4X3nFYs/edit#gid=1425278717
-looking: 
-tools: Zoom, Calendly, Otter.ai, Google Docs (Doc, Sheet, Slide, Forms), HackforLA.org
-  guides
-=======
   - name: GitHub
     url: 'https://github.com/codeforamerica/brigade-playbook'
   - name: Slack
@@ -116,7 +89,6 @@ tools: Zoom, Calendly, Otter.ai, Google Docs (Doc, Sheet, Slide, Forms), Hackfor
     url: 'https://docs.google.com/spreadsheets/d/1N0VSDhYyy5WhX_z18Q0RvLlGO29JGGdMxVsD4X3nFYs/edit#gid=1425278717'
 looking:
 tools: Zoom, Calendly, Otter.ai, Google Docs, HackforLA.org guides
->>>>>>> 833-Create-Progam_Areas-Page
 technologies:
 - Markdown
 location:
