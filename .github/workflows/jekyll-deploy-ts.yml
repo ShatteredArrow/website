@@ -5,9 +5,8 @@ name: jekyl-deploy ts
 # Controls when the action will run. Workflow runs when manually triggered using the UI
 # or API.
 on:
-  push:
-    branches:
-      - gh-pages
+  pull_request:
+    branches: [gh-pages]
 
 jobs:
   jekyll:
