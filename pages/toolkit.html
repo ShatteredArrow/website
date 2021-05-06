@@ -90,7 +90,7 @@ layout: default
 
                 {%- if item.svg -%}
                 <div class="toolkit-flex-item-img-container resource-svg-icons">
-                    {% include {{ item.svg }} %}
+                    {% include {{ item.svg | relative_url }} %}
                 </div>
                 {%- endif -%}
 
@@ -99,7 +99,7 @@ layout: default
                     <p>{{ item.description }}</p>
                 </div>
                 <a href="{{item.provider-link}}" class="toolkit-flex-item-status" target="_blank">
-                    {% include {{ item.link-svg }} %}
+                    {% include {{ item.link-svg | relative_url}} %}
                 </a>
             </div>
             {%- endif -%}
