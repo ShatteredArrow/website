@@ -66,7 +66,6 @@ jobs:
       - name: 🚀 deploy
         uses: peaceiris/actions-gh-pages@v3
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
           personal_token: ${{ secrets.HACKFORLA_BOT_PA_TOKEN }}
           deploy_key: ${{ secrets.ACTIONS_DEPLOY_KEY }}
           external_repository: hackforla/t1
