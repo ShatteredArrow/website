@@ -6,9 +6,9 @@ description: The LA TDM Calculator is a web app, created in conjunction with the
   estate developers design better projects for Los Angeles. The Calculator is being
   implemented alongside a new ordinance reducing over-parking and improving the infrastructure
   to incentivize public transportation and discourage single occupancy vehicle trips.
-image: "./assets/images/projects/tdm-calculator.jpg"
+image: "/assets/images/projects/tdm-calculator.jpg"
 alt: LA TDM Calculator Landing Page (Mock Up)
-image-hero: "./assets/images/projects/TDM-calculator-hero.png"
+image-hero: "/assets/images/projects/TDM-calculator-hero.png"
 alt-hero: Los Angeles skyline at dusk, complete with cranes on top of buildings and
   golden smog.
 leadership:

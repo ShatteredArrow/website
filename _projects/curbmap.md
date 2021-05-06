@@ -5,7 +5,7 @@ description: We are building a platform to engage the community to map and updat
   easy for all people (community members, visitors, etc.) to use to see the landscape
   of parking around themselves. We want to help you avoid endlessly searching for
   parking in all the wrong places and reduce your risk of getting tickets.
-image: "./assets/images/projects/curbmap.jpg"
+image: "/assets/images/projects/curbmap.jpg"
 alt: Parking sign
 links:
 - name: GitHub
