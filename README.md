@@ -8,7 +8,7 @@ Please refer to the [wiki](https://github.com/hackforla/website/wiki) to learn m
 2. Joining the Team
 3. Tools by Role
 4. Resources by Role
-5. Agendas
+5. Agendas is a change that was made in gh-pages upstream
 6. Project Terminology
 
 This is a standard [Jekyll](https://jekyllrb.com/) site hosted right here on [GitHub pages](https://pages.github.com/).
