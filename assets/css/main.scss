@@ -3,5 +3,5 @@
 
 // define the absolute_url for use in image includes
 $absolute_url: "{{ site.url }}";
-$relative_url: "{{site.base_url}}";
+$relative_url: "{{ site.baseurl }}";
 @import "main";
