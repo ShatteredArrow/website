@@ -19,17 +19,8 @@ jobs:
       
       - name: 📄📄 Transform Staging Repository to Github Pages Site 📄📄
         run: |
-          curl \
-                --request POST \
-                --header "Accept:application/vnd.github.switcheroo-preview+json" \
-                --header "Authorization:token ${{ secrets.HACKFORLA_BOT_PA_TOKEN }}" \
-                --url https://api.github.com/repos/hackforla/t1/pages \
-                --data '{
-                          "source":{
-                                      "branch":"main"
-                                   }
-                        }
-                
+          curl --request POST --header "Accept:application/vnd.github.switcheroo-preview+json" --header "Authorization:token ${{ secrets.HACKFORLA_BOT_PA_TOKEN }}" --url https://api.github.com/repos/hackforla/t1/pages -data '{"source":{"branch":"main"}}'       
+      
       - name: 📂 setup
         uses: actions/checkout@v2
 
