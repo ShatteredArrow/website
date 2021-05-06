@@ -1,6 +1,6 @@
 ---
 title: 311 Data
-description: The 311 Data project seeks to empower local Neighborhood Councils to improve the ideation and analysis of their initiatives using the wealth of publicly available 311 data.
+description: This description has been changes.
 image: /assets/images/projects/311_data.png
 alt: '311 data logo.'
 image-hero: /assets/images/projects/311data-beta.png
