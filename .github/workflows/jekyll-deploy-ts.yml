@@ -15,12 +15,7 @@ jobs:
     
       - name: 🚗🚗 Hoist Staging Repository 🚗🚗
         run: |
-          curl \
-                --request POST \
-                --header "Accept:application/vnd.github.v3+json" \
-                --header "Authorization:token ${{ secrets.HACKFORLA_BOT_PA_TOKEN }}" \
-                --url https://api.github.com/orgs/hackforla/repos
-                --data '{"name":"t1","auto_init":true}'
+          curl --request POST --header "Accept:application/vnd.github.v3+json" --header "Authorization:token ${{ secrets.HACKFORLA_BOT_PA_TOKEN }}" --url https://api.github.com/orgs/hackforla/repos --data '{"name":"t1","auto_init":true}'
       
       - name: 📄📄 Transform Staging Repository to Github Pages Site 📄📄
         run: |
