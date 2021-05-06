@@ -70,7 +70,7 @@ jobs:
           deploy_key: ${{ secrets.ACTIONS_DEPLOY_KEY }}
           external_repository: hackforla/t1
           publish_branch: main
-          publish_dir: ./
+          publish_dir: ./_site
           # if the repo you are deploying to is <username>.github.io, uncomment the line below.
           # if you are including the line below, make sure your source files are NOT in the master branch:
           # publish_branch: master
