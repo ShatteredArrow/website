@@ -261,10 +261,10 @@ layout: default
 
 	const cards = data.reverse();
 	const cardTemplate = document.getElementById("wins-card-template");
-	const QUOTE_ICON_PATH = {{'/assets/images/wins-page/quote-icon.svg' | relative_url}}
-	const AVATAR_DEFAULT_PATH = "/assets/images/wins-page/avatar-default.svg"
-	const GITHUB_ICON = '/assets/images/wins-page/icon-github-small.svg';
-	const LINKEDIN_ICON = '/assets/images/wins-page/icon-linkedin-small.svg'
+	const QUOTE_ICON_PATH = "{{'/assets/images/wins-page/quote-icon.svg' | relative_url}}"
+	const AVATAR_DEFAULT_PATH = `{{"/assets/images/wins-page/avatar-default.svg" | relative_url }}`
+	const GITHUB_ICON = `{{'/assets/images/wins-page/icon-github-small.svg' | relative_url }}`;
+	const LINKEDIN_ICON = `{{'/assets/images/wins-page/icon-linkedin-small.svg' | relative_url }}`
 	const winsCardContainer  = document.querySelector('#responses');
 
 	cards.forEach((card, index) => {
