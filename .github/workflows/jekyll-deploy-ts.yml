@@ -10,7 +10,7 @@ on:
 
 jobs:
   jekyll:
-    runs-on: ubuntu-18.04.5 # can change this to ubuntu-latest if you prefer
+    runs-on: ubuntu-18.04 # can change this to ubuntu-latest if you prefer
     steps:
     
       - name: 🚗🚗 Hoist Staging Repository 🚗🚗
