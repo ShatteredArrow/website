@@ -26,7 +26,7 @@ layout: default
     {% if community[1].visible == true %}
     <div class="page-card-base card-primary page-card-lg page-card-container">
         <div class="page-card-image-container">
-            <img class="page-card-image" src="{{ community[1].image }}" alt="{{ community[1].alt }}"/>
+            <img class="page-card-image" src="{{ community[1].image | relative_url }}" alt="{{ community[1].alt }}"/>
         </div>
         <div class="page-card-content">
             <h3>{{ community[1].name}}</h3>

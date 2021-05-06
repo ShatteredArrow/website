@@ -9,7 +9,7 @@ permalink: /credits/
       Check out all of the iconography and imagery we have used on our site.
     </p>
   </div>
-    <img src="/assets/images/credits/credits-hero.svg">
+    <img src={{"/assets/images/credits/credits-hero.svg | relative_url"}}>
   </div>
 </div>
 
@@ -23,7 +23,7 @@ permalink: /credits/
                           <!-- originally class="project-card-inner" -->
                         <div class="credits-item">
                           <div class="icon-left">
-                            <img src={{ item[1].image-url | absolute_url }} alt={{item[1].alt}}/>
+                            <img src={{ item[1].image-url | relative_url }} alt={{item[1].alt}}/>
                           </div>
                           <div class="icon-info">
                             {%- if item[1].title -%}

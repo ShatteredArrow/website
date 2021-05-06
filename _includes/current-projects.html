@@ -64,7 +64,7 @@
       let projectData = [{%- for project in visible_projects -%}
             {
                 "project": {
-                            'id': "{{project.id | default: 0}}",
+                            'id': "{{project.id | default: 0 | relative_url}}",
                             'identification': {{project.identification | default: 0}},
                             "status": "{{ project.status }}"
                             {%- if project.location -%},
