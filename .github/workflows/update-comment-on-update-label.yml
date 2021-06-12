@@ -15,4 +15,8 @@ jobs:
         with:
           issue-number: ${{ github.event.issue.number }}
           body: |
-            This issue is available for anyone to work on. **Make sure to reference this issue in your pull request.** :sparkles: 
+            @${{ github.event.issue.assignee }} Please add update /
+            1. Progress
+            2. Blockers
+            3. Avaibility
+            4. ETA
