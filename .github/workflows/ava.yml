@@ -23,5 +23,5 @@ jobs:
           result-encoding: string
           script: |
             // Retrieve comments
-            let comment = context.payload.pull_request.issue
+            let comment = context
             console.log(comment)
