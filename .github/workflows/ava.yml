@@ -1,7 +1,6 @@
 # This is a basic workflow that is manually triggered
 
-name: Manual workflow
-
+name: ava
 # Controls when the action will run. Workflow runs when manually triggered using the UI
 # or API.
 on:
@@ -24,5 +23,5 @@ jobs:
           result-encoding: string
           script: |
             // Retrieve comments
-            let comment = context.payload.pull_request.issue
+            let comment = context.payload.pull_request
             console.log(comment)
