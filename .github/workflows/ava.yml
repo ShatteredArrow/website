@@ -1,0 +1,28 @@
+# This is a basic workflow that is manually triggered
+
+name: Manual workflow
+
+# Controls when the action will run. Workflow runs when manually triggered using the UI
+# or API.
+on:
+  pull_request:
+    types: [opened, edited]
+
+jobs:
+# Adds linked issue labels to pull request
+# Step1: Reads pull request comment and return the linked issue
+# Step2: Perform a GET request to retrieve labels from linked issue
+# Step3: Perform a PUT request to apply labels to original pull request
+  Add-Linked-Issue-Labels-to-Pull-Request:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Retrieve Linked Issue From Comment
+        # https://github.com/actions/github-script
+        uses: actions/github-script@v4
+        id: issue-number
+        with:
+          result-encoding: string
+          script: |
+            // Retrieve comments
+            let comment = context.payload.pull_request.issue
+            console.log(comment)
