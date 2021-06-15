@@ -5,7 +5,7 @@ name: ava
 # or API.
 on:
   pull_request:
-    types: [opened, edited]
+    types: [opened, edited, cross-referenced]
 
 jobs:
 # Adds linked issue labels to pull request
